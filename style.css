@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+   /* ----  NAVBAR HEADER ------- */
+
+.header{
+    background-color: rgb(48, 121, 142);
+    box-shadow: 0px 4px 2px;
+    height: 70px;
+}
+
+.main-nav{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-nav .nav{
+    column-gap: 20px;
+    display: flex;
+    
+}
+
+.main-nav .nav a{
+    color: #fff;
+}
+
+.hamza h1{
+   color: aqua;
+   font-size: 30px;
+}
+
+.header .nav :hover{
+   color: aqua;
+}
+
+.nav i{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .main-nav .nav a{
+        display: none;
+    }
+
+    .nav i{
+        display: block;
+        font-size: 30px;
+        color: aqua;
+    }
+}
+
+    /* -------  CARD ------- */
+
+.card img{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width:900px){
+    .container{
+        margin-top: 10vh;
+        gap: 40px;
+    }
+}
+
+   /* ------- FOOTER ------ */
+
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40vh;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(39, 136, 177);
+}
+
+.footer h1{
+    color: aqua;
+}
+
+.footer h3{
+    color: #fff;
+}
+
+.footer p{
+    color: #fff;
+}
+
+.footer .h-1, p{
+    min-height: 10vh;
+    line-height: 22px;
+}
+
+.footer .h-3{
+    margin-top: 4rem;
+}
+
+.footer .h-2 {
+    margin-top: 1rem;
+    text-align: center;
+} 
+
+.footer img{
+    height: 20px;
+    width: 30px;
+    font-size: large;
+}
+
+@media (max-width:900px){
+
+    .footer{
+        margin-top: 30px;
+    }   
+}
+
+@media (max-width:460px){
+    .footer{
+        gap: 30px;
+    }
+    
+    .card .h-1,.p-0{
+        margin-left: 3rem;
+    }
+
+    .card .h-4,.p-1{
+     margin-left: 4rem;
+  }
+   
+  .card .h-3,.p-2{
+    margin-left: 4rem;
+    margin-top: 1rem;
+  }
+}
